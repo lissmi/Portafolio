@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+    <!-- Declaración del tipo de documento como HTML5 y se establece el idioma a español -->
+
+<head>
+    <meta charset="UTF-8">
+    <!-- Establece la codificación de caracteres a UTF-8 para soportar caracteres especiales -->
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Configura el viewport para asegurar que la página se vea bien en dispositivos móviles -->
+    
+    <title>Portafolio Web de Lisett Miranda</title>
+    <!-- Título de la página que se muestra en la pestaña del navegador -->
+    
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Enlace a la hoja de estilos CSS externa -->
+</head>
+
+<body>
+    <!-- Inicio del cuerpo del documento -->
+
+    <!-- Sección de Información Personal -->
+    <header>
+        <!-- Inicio de la cabecera del documento -->
+        
+        <div class="logo">
+            <!-- Contenedor para el logo -->
+            
+            <img src="img/logo.png" alt="Logo de Lisett" id="logo">
+            <!-- Imagen del logo con su respectiva descripción alternativa y un ID -->
+        </div>
+        
+        <div class="contacto" id="contacto"></div>
+        <!-- Contenedor para la sección de contacto, actualmente vacío pero con un ID para su posterior uso -->
+    </header>
+
+    <!-- Sección de Intereses -->
+    <main>
+        <!-- Inicio del contenido principal del documento -->
+        
+        <section id="intereses">
+            <!-- Sección dedicada a los intereses con un ID específico -->
+            
+            <h2>Mis Intereses</h2>
+            <!-- Encabezado de segundo nivel para la sección de intereses -->
+            
+            <div class="slider">
+                <!-- Contenedor para el slider de intereses -->
+                
+                <button class="prev">❮</button>
+                <!-- Botón para retroceder en el slider -->
+                
+                <div class="slider-content">
+                    <!-- Contenedor para el contenido del slider -->
+                    
+                    <div class="slide">
+                        <!-- Elemento individual del slider -->
+                        
+                        <img src="img/interes1.jpg" alt="Interes 1">
+                        <!-- Imagen representativa del primer interés con descripción alternativa -->
+                        
+                        <p>Ayudo a Nami Dulceria con su pagina web y RSS</p>
+                        <!-- Descripción del primer interés -->
+                        
+                        <button onclick="window.open('https://namii.000webhostapp.com/')">Más información</button>
+                        <!-- Botón que abre una nueva ventana con más información sobre el primer interés -->
+                    </div>
+                    
+                    <div class="slide">
+                        <!-- Elemento individual del slider -->
+                        
+                        <img src="img/interes2.jpg" alt="Interes 2">
+                        <!-- Imagen representativa del segundo interés con descripción alternativa -->
+                        
+                        <p>Soy la Creadora y CEO de Ingame Store</p>
+                        <!-- Descripción del segundo interés -->
+                        
+                        <button onclick="window.open('https://www.instagram.com/ingame_store_/')">Más información</button>
+                        <!-- Botón que abre una nueva ventana con más información sobre el segundo interés -->
+                    </div>
+                    
+                    <div class="slide">
+                        <!-- Elemento individual del slider -->
+                        
+                        <img src="img/interes3.jpg" alt="Interes 3">
+                        <!-- Imagen representativa del tercer interés con descripción alternativa -->
+                        
+                        <p>Hago deporte 3 veces por semana</p>
+                        <!-- Descripción del tercer interés -->
+                        
+                        <button onclick="window.open('https://gymvirtual.com/')">Más información</button>
+                        <!-- Botón que abre una nueva ventana con más información sobre el tercer interés -->
+                    </div>
+                </div>
+                
+                <button class="next">❯</button>
+                <!-- Botón para avanzar en el slider -->
+            </div>
+        </section>
+
+        <!-- Sección de Lenguajes -->
+        <section id="lenguajes">
+            <!-- Sección dedicada a los lenguajes con un ID específico -->
+            
+            <h2>Mis Lenguajes</h2>
+            <!-- Encabezado de segundo nivel para la sección de lenguajes -->
+            
+            <div class="carrusel">
+                <!-- Contenedor para el carrusel de lenguajes -->
+                
+                <div class="carrusel-content">
+                    <!-- Contenedor para el contenido del carrusel -->
+                    
+                    <img src="img/lenguaje1.png" alt="HTML">
+                    <!-- Imagen representativa del primer lenguaje (HTML) con descripción alternativa -->
+                    
+                    <img src="img/lenguaje2.png" alt="JS">
+                    <!-- Imagen representativa del segundo lenguaje (JS) con descripción alternativa -->
+                    
+                    <img src="img/lenguaje3.png" alt="CSS">
+                    <!-- Imagen representativa del tercer lenguaje (CSS) con descripción alternativa -->
+                    
+                    <img src="img/lenguaje4.png" alt="MongoDB">
+                    <!-- Imagen representativa del cuarto lenguaje (MongoDB) con descripción alternativa -->
+                    
+                    <img src="img/lenguaje5.png" alt="Python">
+                    <!-- Imagen representativa del quinto lenguaje (Python) con descripción alternativa -->
+                    
+                    <img src="img/lenguaje6.png" alt="SQL">
+                    <!-- Imagen representativa del sexto lenguaje (SQL) con descripción alternativa -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Conocimientos -->
+        <section id="conocimientos">
+            <!-- Sección dedicada a los conocimientos con un ID específico -->
+            
+            <h2>Mis Conocimientos</h2>
+            <!-- Encabezado de segundo nivel para la sección de conocimientos -->
+            
+            <ul id="lista-conocimientos" class="centrar-lista"></ul>
+            <!-- Lista de conocimientos, inicialmente vacía, con una clase para centrarla -->
+        </section>
+
+        <!-- Sección de Calculadora de Promedio -->
+        <section id="calculadora-promedio">
+            <!-- Sección dedicada a la calculadora de promedio con un ID específico -->
+            
+            <h2>Calcula tu Promedio</h2>
+            <!-- Encabezado de segundo nivel para la sección de calculadora de promedio -->
+            
+            <p>Introduce tus notas para calcular tu promedio (mínimo 2, máximo 5 notas, de 1 a 7)</p>
+            <!-- Párrafo explicativo sobre cómo utilizar la calculadora de promedio -->
+            
+            <div id="calculadora">
+                <!-- Contenedor principal para la calculadora -->
+                
+                <p>Resultado de tu promedio</p>
+                <!-- Párrafo que indica dónde se mostrará el resultado del promedio -->
+                
+                <div id="pantalla">
+                    <!-- Contenedor para mostrar el resultado del promedio -->
+                    
+                    <p id="resultado-promedio"></p>
+                    <!-- Párrafo vacío que se llenará con el resultado del promedio -->
+                </div>
+                
+                <div id="calculadora-container">
+                    <!-- Contenedor para los campos de entrada y botones de la calculadora -->
+                    
+                    <div id="campos-notas">
+                        <!-- Contenedor para los campos de entrada de notas -->
+                        
+                        <input type="number" min="1" max="7" placeholder="Nota 1">
+                        <!-- Campo de entrada para la primera nota, con rango de 1 a 7 -->
+                        
+                        <input type="number" min="1" max="7" placeholder="Nota 2">
+                        <!-- Campo de entrada para la segunda nota, con rango de 1 a 7 -->
+                        
+                        <input type="number" min="1" max="7" placeholder="Nota 3">
+                        <!-- Campo de entrada para la tercera nota, con rango de 1 a 7 -->
+                        
+                        <input type="number" min="1" max="7" placeholder="Nota 4">
+                        <!-- Campo de entrada para la cuarta nota, con rango de 1 a 7 -->
+                        
+                        <input type="number" min="1" max="7" placeholder="Nota 5">
+                        <!-- Campo de entrada para la quinta nota, con rango de 1 a 7 -->
+                    </div>
+                    
+                    <div id="botones">
+                        <!-- Contenedor para el botón de la calculadora -->
+                        
+                        <button type="button" class="boton-calculadora" onclick="calcularPromedio()">Calcular Promedio</button>
+                        <!-- Botón que activa la función de calcular el promedio al hacer clic -->
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/scripts.js"></script>
+    <!-- Enlace al archivo JavaScript externo -->
+
+    <footer>
+        <!-- Inicio del pie de página -->
+        
+        Pagina creada por Lisett Miranda
+        <!-- Texto del pie de página -->
+    </footer>
+</body>
+</html>
